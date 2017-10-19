@@ -1,0 +1,68 @@
+<style type="text/css">
+body {
+  background: url(https://i.imgur.com/qXn22pr.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
+}
+
+}
+#footer {
+  bottom: 0;
+  padding: 1rem;
+  background-color: #000000;
+  text-align: center;
+  opacity: .55;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+</style>
+<script type="text/javascript">
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}   
+</script>
+<body>
+<%= render :partial => "navbar" %>
+<div class="container-fluid">
+    <h1 style="text-align: center; padding: 10px; color: white">Company</h1>
+</div>
+<div style="padding-top: 15px; "  class="container">
+    <div style="background-color: rgba(222,222,222,.90)" class="jumbotron">
+        <h1 class="display-3">Welcome to our company</h1>
+        <p class="lead">Providing you with excellent security and a peace of mind</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p style="padding-top: 20px; text-align: right" class="lead">
+        <button class="btn btn-primary btn-lg" onclick="myFunction()">Click Me</button>
+        </p>
+    </div>
+</div>
+
+<div id="myDIV">
+<div style="padding-top: 15px;"  class="container">
+    <div style="background-color: rgba(222,222,222,.90)" class="jumbotron">
+        <h1 class="display-3">Welcome to our company</h1>
+        <p class="lead">Providing you with excellent security and a peace of mind</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p style="padding-top: 20px; text-align: right" class="lead">
+        <button class="btn btn-primary btn-lg" onclick="myFunction()">Click Me</button>
+        </p>
+    </div>
+</div>
+</div>
+ <div id="footer">
+    <a href="/login"><strong style="color: white;">Our Company &copy</strong></a>
+    <br>
+    <strong style="color: white;" >name@email.com<br>(555) 555-5555<br>Beverly Hills, CA</strong>
+</div>  
+</body>

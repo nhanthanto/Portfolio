@@ -1,0 +1,381 @@
+<style type="text/css">
+/*Rouding of Images*/
+img{
+	border-radius: 35px;
+	padding: 20px; 
+	width: 250px; 
+	height: 250px;
+}
+/*Icon Sizing*/
+i{
+	font-size: 10rem
+}
+/*Margin for JS Scroll*/
+button{
+	margin-bottom: 20px;
+}
+/*Banner Adjustment*/
+#head{
+	min-height: 850px;
+	background-image: url(https://i.imgur.com/ODyEJWq.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: center;
+	color: white;
+	padding-top: 15%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+}
+@media(min-width:576px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+/*Intro Size*/
+#intro{
+	min-height: 220px;
+	background-size: 100vw 25vh;
+}
+/*Background Color in Technology*/
+#skills{
+	min-height: 630px;
+	background-color: #337AB7;
+	margin: 0px;
+}
+/*Portfolio Alignment*/
+#portfolio{
+	text-align: center;
+}
+#footer{
+
+}	
+
+#intro{
+	padding: 10%;
+	text-align: center;
+	vertical-align: center;
+}
+#skills{
+	color: white;
+}
+#skillicon{
+	background-color: white ;
+	border-radius: 15px; 
+	padding: 18.5px;
+	margin: 35px;
+}
+#work{  
+	padding: 50px;
+}
+#footer{
+	text-align: center;
+}
+#contact{
+	font-size: 4rem;
+}
+#picture{
+	border-radius: 50%; 
+	width: 130px;
+	height: 130px;
+}
+#port{
+	padding-top: 20px;
+}
+
+
+
+
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+#navtrigger{
+	position: fixed;
+	right:0px;
+	font-size: 4rem;
+	color: white;
+	padding: 10px;
+	text-shadow: 0 0 5px black;
+}
+</style>
+<!-- JS Scroll -->
+<script type="text/javascript">
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 1200, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	    document.getElementById("main").style.marginRight = "250px";
+	}
+
+	/* Set the width of the side navigation to 0 and the Right margin of the page content to 0 */
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("main").style.marginRight = "0";
+	} 	
+
+</script>
+<!-- Dev Icon Link -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<!-- BootStrap Font -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Start of Wrapper -->
+<div class="wrapper">
+	<!-- NavBar -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#head">Top</a>
+		<a href="#intro">About</a>
+		<a href="#skills">Technology</a>
+		<a href="#portfolio">Portfolio</a>
+		<a href="#footer">Contact</a>
+	</div>
+	<!-- Use any element to open the sidenav -->
+	<span id="navtrigger" onclick="openNav()" class="glyphicon glyphicon-menu-hamburger"></span>
+
+	<!-- NavBar -->
+	<!-- Start of Head -->
+	<div id="head" class="container-fluid">
+			<h1>Nhan To</h1>
+	        <h3>Web Developer</h3>
+	        <a href="#intro"><button class="glyphicon glyphicon-triangle-bottom"></button></a>
+	</div>
+	<!-- End of Head -->
+	<!-- Start of Body -->
+	<div id="body">
+		<div id="intro">
+		<h2>Dynamic and Responsive Design</h2>
+        <p class="lead">Fluid and Manageable across all platforms using Bootstrap and Ruby on Rails</p>
+        <a href="#skills"><button class="glyphicon glyphicon-triangle-bottom"></button></a>
+		</div>
+		<div id="skills">
+			<div class="row text-center">
+				<div class="container">
+					<h2>Technology</h2>
+					<a href="#portfolio" ><button class="glyphicon glyphicon-triangle-bottom"></button></a>
+					<hr class="small">
+					<div class="col">
+						<div class="service-item">
+							<!-- Extra Icon -->
+							<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-cloud fa-stack-1x text-primary"></i>
+							</span>
+							<!-- Extra Icon -->
+							<h4>
+							<strong>Client</strong>
+							</h4>
+							<p>HTML5 CSS3 Javascript Jquery Angular</p>
+							<!-- Skill Icon Start -->
+							<div id="skillicon">
+								<i class="devicon-html5-plain-wordmark colored"></i>
+								<i class="devicon-css3-plain-wordmark colored"></i>
+								<i class="devicon-javascript-plain colored"></i>
+								<i class="devicon-jquery-plain-wordmark colored"></i>
+								<i class="devicon-angularjs-plain colored"></i>
+							</div>
+							<!-- Skill Icon End -->
+						</div>
+					</div>
+					<div class="col">
+						<div class="service-item">
+							<!-- Extra Icon -->
+							<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-server fa-stack-1x text-primary"></i>
+							</span>
+							<!-- Extra Icon -->
+							<h4>
+							<strong>Server</strong>
+							</h4>
+							<p>PHP RoR Node.js Express.js Nginx</p>
+							<!-- Skill Icon Start -->
+							<div id="skillicon">
+								<i class="devicon-php-plain colored"></i>
+								<i class="devicon-ruby-plain-wordmark colored"></i>
+								<i class="devicon-nodejs-plain colored"></i>
+								<i class="devicon-express-original colored"></i>
+								<i class="devicon-nginx-plain colored"></i>
+							</div>
+							<!-- Skill Icon End -->
+						</div>
+					</div>
+					<div class="col">
+						<div class="service-item">
+							<!-- Extra Icon -->
+							<span class="fa-stack fa-4x">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-database fa-stack-1x text-primary"></i>
+							</span>
+							<!-- Extra Icon -->
+							<h4>
+							<strong>Database</strong>
+							</h4>
+							<p>MongoDB MySQL Postgres</p>
+							<!-- Skill Icon Start -->
+							<div id="skillicon">
+								<i class="devicon-mongodb-plain-wordmark colored"></i>
+								<i class="devicon-mysql-plain-wordmark colored"></i>
+								<i class="devicon-postgresql-plain-wordmark colored"></i>
+								<i class="devicon-apache-plain-wordmark colored"></i>
+								<i class="devicon-heroku-line-wordmark colored"></i>
+							</div>
+							<!-- Skill Icon End -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="portfolio">
+			<div class="row">
+				<div id="port">
+					<h2>Portfolio</h2>
+					<a href="#footer" ><button class="glyphicon glyphicon-triangle-bottom"></button></a>
+					<hr class="small">
+					<!-- Start of Portfolio Container -->
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4">
+								<strong>E-Commerce</strong>
+								<br>
+								<a href="https://immense-escarpment-74711.herokuapp.com/">
+									<img src="https://i.imgur.com/uElpiBQ.png" border="0">
+								</a>
+							</div>
+							<div class="col-md-4">
+								<strong>Company Site</strong>
+								<br>
+								<a href="company">
+									<img src="https://i.imgur.com/W5cvNgS.png" alt="company" border="0">
+								</a>
+							</div>
+							<div class="col-md-4">
+								<strong>Lend Me</strong>
+								<br>
+								<a href="https://arcane-shore-94674.herokuapp.com/">
+									<img src="https://i.imgur.com/Gi1HukC.png" alt="blog" border="0">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- End of Portfolio Container -->
+					<!-- Start of Work -->
+					<div id="work">
+						<div class="row">
+							<div>
+								<h2>Nova Home Loans<br>Nadiyah Jones</h2><br>
+								<p>"Nhan was awesome! Listened to everything I asked for and was great with communication. Will definitely use him again."</p>
+							</div>
+							<div>
+								<a href="https://www.nadiyahknowsmortgageloans.com"><img src="https://i.imgur.com/4sJ1zS1.png"></a><br>
+								<!-- <a href="https://www.lasvegashomeloan.org"><button>Work</button></a> -->
+							</div>
+						</div>
+					</div>
+					<!-- End of Work -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of Body -->
+	<!-- Start of Footer -->
+	<div id="footer" class="container">
+		<div>
+		<h4>
+		<strong>Contact</strong>
+		</h4>
+		<img id="picture" src="https://i.imgur.com/yG2BDsX.jpg">
+		<p>Miracle Mile, CA 90036</p>
+		<i class="fa fa-phone fa-fw"></i>
+		(818) 274-4744
+		<br>
+		<a href="mailto:name@example.com">nhan.thanh.to@gmail.com</a>
+		<br>
+		<a  href="https://github.com/nhanthanto">
+		<i id="contact" class="fa fa-github" aria-hidden="true"></i>
+		</a>
+		<a  href="mailto:nhan.thanh.to@gmail.com">
+		<i id="contact" class="fa fa-envelope" aria-hidden="true"></i>
+		</a>
+		<a  href="https://www.linkedin.com/in/nhanthanhto">
+		<i id="contact" class="fa fa-linkedin" aria-hidden="true"></i>
+		</a>
+		<hr class="small">
+		<p class="text-muted">Copyright &copy; nhanto.info 2017</p>
+		<a href="#head" class="btn btn-dark btn-lg js-scroll-trigger">
+		<button class="glyphicon glyphicon-triangle-top"></button>
+		</a>
+		</div>
+	</div>
+	<!-- End of Footer -->
+</div>
+<!-- End of Wrapper -->
