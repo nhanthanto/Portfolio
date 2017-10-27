@@ -15,7 +15,7 @@
 	      $('html, body').animate({
 	        scrollTop: $(hash).offset().top
 	      }, 1200, function(){
-	   
+
 	        // Add hash (#) to URL when done scrolling (default click behavior)
 	        window.location.hash = hash;
 	      });
@@ -31,5 +31,6 @@
 	function closeNav() {
 	    document.getElementById("mySidenav").style.width = "0";
 	    document.getElementById("main").style.marginRight = "0";
-	} 	
+	}
 
+AOS.init();
