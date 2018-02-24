@@ -2,8 +2,8 @@
 /*Rouding of Images*/
 img{
 	border-radius: 35px;
-	padding: 20px; 
-	width: 250px; 
+	padding: 20px;
+	width: 250px;
 	height: 250px;
 }
 /*Icon Sizing*/
@@ -29,10 +29,10 @@ button{
     background-size: cover;
     image-rendering: -webkit-optimize-contrast;
 }
-@media(min-width:576px){}
-@media(min-width:768px){}
-@media(min-width:992px){}
-@media(min-width:1200px){}
+// @media(min-width:576px){}
+// @media(min-width:768px){}
+// @media(min-width:992px){}
+// @media(min-width:1200px){}
 /*Intro Size*/
 #intro{
 	min-height: 220px;
@@ -50,7 +50,7 @@ button{
 }
 #footer{
 
-}	
+}
 
 #intro{
 	padding: 10%;
@@ -62,11 +62,11 @@ button{
 }
 #skillicon{
 	background-color: white ;
-	border-radius: 15px; 
+	border-radius: 15px;
 	padding: 18.5px;
 	margin: 35px;
 }
-#work{  
+#work{
 	padding: 50px;
 }
 #footer{
@@ -76,7 +76,7 @@ button{
 	font-size: 4rem;
 }
 #picture{
-	border-radius: 50%; 
+	border-radius: 50%;
 	width: 130px;
 	height: 130px;
 }
@@ -135,7 +135,7 @@ button{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-} 
+}
 
 #navtrigger{
 	position: fixed;
