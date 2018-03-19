@@ -3,8 +3,8 @@ development:
   encoding: unicode
   database: PORT_development
   pool: 5
-  username: root
-  password: password
+  username: postgres
+  password: julia
   host: localhost
 
 test:
@@ -12,5 +12,5 @@ test:
   encoding: unicode
   database: PORT_test
   pool: 5
-  username: root
-  password: password
+  username: postgres
+  password: julia
